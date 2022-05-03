@@ -4,49 +4,14 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Appheader from "./Appheader";
-// import Profile from "./Profile";
-// import Createpost from "./Createpost";
-// import Signup from "./Signup";
-// import Signin from "./Signin";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+      <Appheader />
       <Routes>
-        {/* <Route exact path="/signup" element={<Signup />} />
-
-        <Route exact path="/signin" element={<Signin />} /> */}
-        <Route
-          exact
-          path="/"
-          element={
-            <>
-              <Appheader />
-              <App />
-            </>
-          }
-        />
-        {/* <Route
-          exact
-          path="/profile"
-          element={
-            <>
-              <Appheader />
-              <Profile />
-            </>
-          }
-        />
-
-        <Route
-          exact
-          path="/createpost"
-          element={
-            <>
-              <Appheader />
-              <Createpost />
-            </> 
-        } />*/}
+        <Route exact path="/" element={<App />} />
       </Routes>
     </Router>
   </React.StrictMode>
