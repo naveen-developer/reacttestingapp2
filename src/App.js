@@ -1,35 +1,39 @@
 import "./App.css";
-import Avatar from "@mui/material/Avatar";
 import React from "react";
+import Avatar from "@mui/material/Avatar";
 import Post from "./Post";
+import Appheader from "./Appheader";
 import data from "./data";
 
 function App() {
   return (
-    <div className="app">
-      <div className="app__posts">
-        <div className="app__posts_left">
-          {data[0].posts.map((values, index) => {
-            return <Post key={index} values={values} userdata={data[0]} />;
-          })}
-        </div>
-        <div className="app__posts_right">
-          <div className="app__posts_right__header">
-            <Avatar
-              className="post__avatar"
-              alt="Remy Sharp"
-              src={data[0].picture}
-            />
-            <div>
-              <p>
-                <strong>mr_naveen_143</strong>
-              </p>
-              <p>Naveen Lagishetty</p>
+    <>
+      <Appheader />
+      <div className="app">
+        <div className="app__posts">
+          <div className="app__posts_left">
+            {data[0].posts.map((values, index) => {
+              return <Post key={index} values={values} userdata={data[0]} />;
+            })}
+          </div>
+          <div className="app__posts_right">
+            <div className="app__posts_right__header">
+              <Avatar
+                className="post__avatar"
+                alt="Remy Sharp"
+                src={data[0].picture}
+              />
+              <div>
+                <p>
+                  <strong>mr_naveen_143</strong>
+                </p>
+                <p>Naveen Lagishetty</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
