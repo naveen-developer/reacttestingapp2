@@ -2,13 +2,11 @@ import "./App.css";
 import React from "react";
 import Avatar from "@mui/material/Avatar";
 import Post from "./Post";
-import Appheader from "./Appheader";
 import data from "./data";
 
 function App() {
   return (
     <>
-      <Appheader />
       <div className="app">
         <div className="app__posts">
           <div className="app__posts_left">
