@@ -4,7 +4,7 @@ const Post = () => {
   return (
     <div>
       <h2>Vijay poster 1</h2>
-      <img src="/images/vijay1.jpg" width="100%" alt="image" />
+      <img src="/reacttestingapp2/images/vijay1.jpg" width="100%" alt="image" />
     </div>
   );
 };
