@@ -1,4 +1,5 @@
 import "./App.css";
+import data from "./data";
 import Post from "./Post";
 
 function App() {
@@ -6,8 +7,9 @@ function App() {
     <div className="App">
       <div className="parenddiv">
         <div className="childdiv">
-          <Post />
-          <Post />
+          {data.map((values, index) => {
+            return <Post key={index} values={values} />;
+          })}
         </div>
       </div>
     </div>
