@@ -51,8 +51,8 @@ const Appheader = () => {
           />
         </div>
         <div className="app__headerLinks">
-          <Link to="/signin">Signin</Link>
-          <Link to="/signup">Signup</Link>
+          <Link to="/signin">Login</Link>
+          <Link to="/signup">Logout</Link>
           <Link to="/profile">My Profile</Link>
           <Link to="/createpost">Create Post</Link>
         </div>
